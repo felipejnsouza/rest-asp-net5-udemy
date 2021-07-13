@@ -2,6 +2,7 @@
 using Microsoft.Extensions.Logging;
 using RestWithASPNETUdemy.Business;
 using RestWithASPNETUdemy.Data.VO;
+using RestWithASPNETUdemy.Hypermedia.Filters;
 
 namespace RestWithASPNETUdemy.Controllers
 {
@@ -20,12 +21,14 @@ namespace RestWithASPNETUdemy.Controllers
         }
 
         [HttpGet]
+        [TypeFilter(typeof(HyperMediaFilter))]
         public ActionResult Get()
         {
             return Ok(_bookBusiness.FindAll());
         }
 
         [HttpGet("{id}")]
+        [TypeFilter(typeof(HyperMediaFilter))]
         public ActionResult Get(long id)
         {
             var book = _bookBusiness.FindByID(id);
@@ -34,6 +37,7 @@ namespace RestWithASPNETUdemy.Controllers
         }
 
         [HttpPost]
+        [TypeFilter(typeof(HyperMediaFilter))]
         public ActionResult Post([FromBody] BookVO book)
         {
             if (book == null) return BadRequest();
@@ -41,6 +45,7 @@ namespace RestWithASPNETUdemy.Controllers
         }
 
         [HttpPut]
+        [TypeFilter(typeof(HyperMediaFilter))]
         public ActionResult Put([FromBody] BookVO book)
         {
             if (book == null) return BadRequest();
@@ -48,6 +53,7 @@ namespace RestWithASPNETUdemy.Controllers
         }
 
         [HttpDelete("{id}")]
+        [TypeFilter(typeof(HyperMediaFilter))]
         public ActionResult Delete(long id)
         {
             _bookBusiness.Delete(id);

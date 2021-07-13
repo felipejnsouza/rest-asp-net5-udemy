@@ -2,6 +2,7 @@
 using Microsoft.Extensions.Logging;
 using RestWithASPNETUdemy.Business;
 using RestWithASPNETUdemy.Data.VO;
+using RestWithASPNETUdemy.Hypermedia.Filters;
 
 namespace RestWithASPNETUdemy.Controllers
 {
@@ -20,12 +21,14 @@ namespace RestWithASPNETUdemy.Controllers
         }
 
         [HttpGet]
+        [TypeFilter(typeof(HyperMediaFilter))]
         public ActionResult Get()
         {
             return Ok(_personBusiness.FindAll());
         }
         
         [HttpGet("{id}")]
+        [TypeFilter(typeof(HyperMediaFilter))]
         public ActionResult Get(long id)
         {
             var person = _personBusiness.FindByID(id);
@@ -34,6 +37,7 @@ namespace RestWithASPNETUdemy.Controllers
         }
 
         [HttpPost]
+        [TypeFilter(typeof(HyperMediaFilter))]
         public ActionResult Post([FromBody] PersonVO person)
         {
             if (person == null) return BadRequest();
@@ -41,6 +45,7 @@ namespace RestWithASPNETUdemy.Controllers
         }
 
         [HttpPut]
+        [TypeFilter(typeof(HyperMediaFilter))]
         public ActionResult Put([FromBody] PersonVO person)
         {
             if (person == null) return BadRequest();
