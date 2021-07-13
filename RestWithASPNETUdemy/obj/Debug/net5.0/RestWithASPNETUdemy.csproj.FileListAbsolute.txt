@@ -49,3 +49,10 @@ C:\Users\felipe.souza\source\repos\RestWithASPNETUdemy\RestWithASPNETUdemy\bin\D
 C:\Users\felipe.souza\source\repos\RestWithASPNETUdemy\RestWithASPNETUdemy\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\felipe.souza\source\repos\RestWithASPNETUdemy\RestWithASPNETUdemy\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\felipe.souza\source\repos\RestWithASPNETUdemy\RestWithASPNETUdemy\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\felipe.souza\source\repos\RestWithASPNETUdemy\RestWithASPNETUdemy\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\felipe.souza\source\repos\RestWithASPNETUdemy\RestWithASPNETUdemy\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\felipe.souza\source\repos\RestWithASPNETUdemy\RestWithASPNETUdemy\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\felipe.souza\source\repos\RestWithASPNETUdemy\RestWithASPNETUdemy\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\felipe.souza\source\repos\RestWithASPNETUdemy\RestWithASPNETUdemy\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\felipe.souza\source\repos\RestWithASPNETUdemy\RestWithASPNETUdemy\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\felipe.souza\source\repos\RestWithASPNETUdemy\RestWithASPNETUdemy\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
