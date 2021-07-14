@@ -1,0 +1,7 @@
+services:
+  rest-with-asp-net-udemy:
+    build:
+      context: C:\Users\felipe.souza\source\repos\RestWithASPNETUdemy
+      dockerfile: RestWithASPNETUdemy/Dockerfile
+    image: restwithaspnetudemy
+version: '3.4'

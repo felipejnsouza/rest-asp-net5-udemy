@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "JW4ITTjl5tKY2RPbXh8q53VYy/aPAbIVArQEh/U2k0Q5tNkccdorRvusc4YzZzgyoAAXRlEGvHaUT65YoS/xbw==",
+  "dgSpecHash": "KqU5/gRSV1YxyRoOxssNk2P2T22yMoadAM+G1c/ouFk236DPjBQ4yLglb4yDDXH6YDbeE6W96Vit7zO9uOPbrA==",
   "success": true,
   "projectFilePath": "C:\\Users\\felipe.souza\\source\\repos\\RestWithASPNETUdemy\\RestWithASPNETUdemy\\RestWithASPNETUdemy.csproj",
   "expectedPackageFiles": [
@@ -58,6 +58,7 @@
     "C:\\Users\\felipe.souza\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\felipe.souza\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\felipe.souza\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\felipe.souza\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.9\\microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512",
     "C:\\Users\\felipe.souza\\.nuget\\packages\\mysqlconnector\\0.69.9\\mysqlconnector.0.69.9.nupkg.sha512",
     "C:\\Users\\felipe.souza\\.nuget\\packages\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
     "C:\\Users\\felipe.souza\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\3.2.0\\pomelo.entityframeworkcore.mysql.3.2.0.nupkg.sha512",

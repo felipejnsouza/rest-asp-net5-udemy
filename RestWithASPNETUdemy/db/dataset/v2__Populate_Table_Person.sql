@@ -1,6 +1,6 @@
-INSERT INTO `person` VALUES 
-	(1,'Ayrton','Sena','São Paulo - Brasil','Male'),
-	(2,'Felipe','Souza','BHZ - Brasil','Male'),
-	(3,'Naira','Dau','Belo Horizonte - Brasil','Female'),
-	(5,'Mary','Costa','Belo Horizonte - Brasil','Female'),
-	(6,'Rosane','Silva','Belo Horizonte - Brasil','Female');
+INSERT INTO `person` (`id`, `address`, `first_name`, `gender`, `last_name`) VALUES
+	(1, 'SÃ£o Paulo - Brasil', 'Ayrton', 'Male', 'Senna'),
+	(2, 'Anchiano - Italy', 'Leonardo', 'Male', 'da Vinci'),
+	(3, 'Porbandar - India', 'Mahatma', 'Male', 'Gandhi'),
+	(4, 'Kentucky - USA', 'Mohamed Ali', 'Male', 'Gandhi'),
+	(5, 'Mvezo - South Africa', 'Nelson', 'Male', 'Mandela');
