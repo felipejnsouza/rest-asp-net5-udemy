@@ -9,7 +9,8 @@ namespace RestWithASPNETUdemy.Repository.Generic
 {
     public class GenericRepository<T> : IRepository<T> where T : BaseEntity
     {
-        private MySQLContext _context;
+        protected private MySQLContext _context;
+
         private DbSet<T> dataset;
 
         public GenericRepository(MySQLContext context)
@@ -87,6 +88,28 @@ namespace RestWithASPNETUdemy.Repository.Generic
         public bool Exists(long id)
         {
             return dataset.Any(item => item.Id.Equals(id));
+        }
+
+        //return page
+        public List<T> FindWithPagedSearch(string query)
+        {
+            return dataset.FromSqlRaw<T>(query).ToList();
+        }
+
+        //return total
+        public int GetCount(string query)
+        {
+            var result = "";
+            using (var connection = _context.Database.GetDbConnection())
+            {
+                connection.Open();
+                using (var command = connection.CreateCommand())
+                {
+                    command.CommandText = query;
+                    result = command.ExecuteScalar().ToString();
+                }
+            }
+            return int.Parse(result);
         }
     }
 }
